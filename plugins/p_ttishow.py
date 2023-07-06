@@ -1,5 +1,5 @@
 from pyrogram import Client, filters, enums
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , Message
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_IMG, MELCOW_VID, MAIN_CHANNEL, S_GROUP
 from database.users_chats_db import db
@@ -10,6 +10,19 @@ from pyrogram.errors import ChatAdminRequired
 import asyncio
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
+@Client.on_message(filters.channel & (filters.video | filters.document))
+async def update(_: Client, msg: Message):
+    if msg is None:
+        return
+
+    channel_id = msg.chat.id
+    if channel_id not in CHANNELS:
+        return
+
+    movie_name = msg.caption or msg.document.file_name
+    if movie_name:
+        message = f"{movie_name} has been added to **Bot**."
+        await _.send_message(chat_id=LOG_CHANNEL, text=message)
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
