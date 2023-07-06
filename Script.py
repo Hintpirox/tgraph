@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b>Hello  {},
-I am File Searcher Bot\nJust Type Movie Name And See Magic✨🎩✨\n\nTo Activate This Bot In Your Group Send Message To @Cyniteofficial"""
+I am File Searcher Bot\nJust Type Movie Name And See Magic✨🎩✨</b>"""
     
     HELP_TXT = """<b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
@@ -122,18 +122,16 @@ Akhand Bharat 🇮🇳
     SUR_TXT = """
 <b>
 Hello {}, 
-I am File Searcher Bot\nJust Type Movie Name Name And See Magic ✨🎩✨\n\n To Activate This Bot In Group Message @Cyniteofficial</b>
+I am File Searcher Bot\nJust Type Movie Name Name And See Magic ✨🎩✨</b>""
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{title}</a>
+<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{tle}</a>
 
-🎭 ɢᴇɴʀᴇs : {genres}
-
-©{message.chat.title}</b>
+🎭 ɢᴇɴʀᴇs : {genres}</b>
 """
 
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}"""
+    CUSTOM_FILE_CAPTION = """<b>{file_name}"""
 
 
 
@@ -156,7 +154,7 @@ I am File Searcher Bot\nJust Type Movie Name Name And See Magic ✨🎩✨\n\n T
     NORSLTS = """★ #No_Results ★
 User id <b>: {}</b>
 User Name <b>: {}</b>
-Results Name <b>: {}</b>"""
+Results Name : `{}`"""
 
     I_CUDNT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇꜱ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ. 
 ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 
