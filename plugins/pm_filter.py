@@ -166,7 +166,7 @@ async def next_page(bot, query):
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton('How To Watch', url='https://t.me/Movie_Url_link_downloader/12')
+             InlineKeyboardButton('🎣 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/rollmovies')
          ]
     )
     if 0 < offset <= 10:
@@ -903,7 +903,7 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(1, 
          [
              
-             InlineKeyboardButton('How To Watch', url='https://t.me/Movie_Url_link_downloader/12')
+             InlineKeyboardButton('🎣 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/RollMovies')
              
          ]
     )
