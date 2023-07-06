@@ -126,7 +126,7 @@ I am File Searcher Bot\nJust Type Movie Name Name And See Magic ✨🎩✨</b>""
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{tle}</a>
+<b>🔖 ᴛɪᴛʟᴇ :<a href={url}>{title}</a>
 
 🎭 ɢᴇɴʀᴇs : {genres}</b>
 """
